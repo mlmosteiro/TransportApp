@@ -12,14 +12,31 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+import model.Announcement;
 
 public class mainAnnouncement extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, AdapterView.OnItemClickListener {
+
+
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main_announcement);
+        this.listView = (ListView) findViewById(R.id.listView_announcements);
+        ArrayList announcementsList = dummyDataList();
+        this.listView.setAdapter(new AnnouncementsAdapter(this,announcementsList));
+
+        listView.setOnItemClickListener(this);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -40,6 +57,7 @@ public class mainAnnouncement extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -89,5 +107,22 @@ public class mainAnnouncement extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private ArrayList dummyDataList(){
+        ArrayList<Announcement> array = new ArrayList<>();
+
+        for(int i=0; i<20; i++){
+            array.add(new Announcement("Ciudad"+i, "Ciudad"+(i+1)));
+        }
+
+        return array;
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Snackbar.make(view, "Esto nos llevará a la siguiente pantalla para ver los detalles de cada anuncio, pero aun no :D", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show();
+
     }
 }

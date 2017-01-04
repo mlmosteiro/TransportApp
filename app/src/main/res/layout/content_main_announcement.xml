@@ -16,7 +16,7 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/list_announcements"
+        android:id="@+id/listView_announcements"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         tools:listitem="@layout/list_item_announcemet" />
