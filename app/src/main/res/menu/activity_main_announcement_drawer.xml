@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/last_announ"
+            android:icon="@drawable/ic_menu_last_announcements"
+            android:title="Last announcements" />
+        <item
+            android:id="@+id/my_announ"
+            android:icon="@drawable/ic_menu_my_announcements"
+            android:title="My announcements" />
+    </group>
+
+</menu>
