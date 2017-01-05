@@ -1,5 +1,6 @@
 package erasmus.transportapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -44,10 +45,10 @@ public class mainAnnouncement extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Esto nos llevará a la siguiente pantalla para publicar, pero aun no :D", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                publishAnnounce();
             }
         });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -117,6 +118,11 @@ public class mainAnnouncement extends AppCompatActivity
         }
 
         return array;
+    }
+    //TODO: HACER QUE EL BOTON BACK FUNCIONE MÁS RAPIDO. ¿OnResume()?
+    public void publishAnnounce(){
+        Intent intent = new Intent(this, PublishActivity.class);
+        startActivity(intent);
     }
 
     @Override

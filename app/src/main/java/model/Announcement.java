@@ -12,13 +12,15 @@ public class Announcement {
     private String destination;
     private Date loadDate;
     private Date downloadDate;
+    private String description;
     private int imageId;
 
-    public Announcement(String origin, String destination, Date loadDate, Date downloadDate, int imageId) {
+    public Announcement(String origin, String destination, Date loadDate, Date downloadDate,String description, int imageId) {
         this.origin = origin;
         this.destination = destination;
         this.loadDate = loadDate;
         this.downloadDate = downloadDate;
+        this.description = description;
         this.imageId = imageId;
     }
 
@@ -27,6 +29,7 @@ public class Announcement {
         this.destination = destination;
         this.downloadDate = new Date(2017,12,11);
         this.loadDate = new Date(2017,01,11);
+        this.description = new String("Blara blara to blara blara");
         this.imageId = R.drawable.ic_menu_my_announcements;
     }
 
@@ -68,5 +71,13 @@ public class Announcement {
 
     public void setImageId(int imageId) {
         this.imageId = imageId;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
