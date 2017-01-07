@@ -26,4 +26,6 @@
     <string name="you_are_submitting_a_proposal_as_carrier_to">You are submitting a proposal as carrier to:</string>
     <string name="offer">Offer</string>
     <string name="proposal_details">Proposal details</string>
+    <string name="shipper">Shipper</string>
+    <string name="carrier">Carrier</string>
 </resources>
