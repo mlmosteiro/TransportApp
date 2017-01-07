@@ -32,6 +32,9 @@ public class AnnouncementsAdapter extends ArrayAdapter{
         LayoutInflater inflater = LayoutInflater.from(context);
         View announcement = inflater.inflate(R.layout.list_item_announcemet, null);
 
+        TextView title = (TextView) announcement.findViewById(R.id.tv_title);
+        title.setText(dataArray.get(position).getTitle());
+
         ImageView image = (ImageView) announcement.findViewById(R.id.iv_type);
         image.setImageResource(dataArray.get(position).getImageId());
 

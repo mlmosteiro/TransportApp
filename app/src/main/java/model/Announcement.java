@@ -13,9 +13,11 @@ public class Announcement {
     private Date loadDate;
     private Date downloadDate;
     private String description;
+    private String title;
     private int imageId;
 
-    public Announcement(String origin, String destination, Date loadDate, Date downloadDate,String description, int imageId) {
+    public Announcement(String title, String origin, String destination, Date loadDate, Date downloadDate,String description, int imageId) {
+        this.title = title;
         this.origin = origin;
         this.destination = destination;
         this.loadDate = loadDate;
@@ -24,7 +26,9 @@ public class Announcement {
         this.imageId = imageId;
     }
 
+        //TODO: Quitar esto en cuanto se pueda :D
     public Announcement(String origin, String destination) {
+        this.title = "Título del anuncio :D";
         this.origin = origin;
         this.destination = destination;
         this.downloadDate = new Date(2017,12,11);
@@ -79,5 +83,13 @@ public class Announcement {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

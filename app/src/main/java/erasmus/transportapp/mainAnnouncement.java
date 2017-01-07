@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,32 +15,29 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.AdapterView;
-import android.widget.ListView;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-
-import model.Announcement;
-
-public class mainAnnouncement extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, AdapterView.OnItemClickListener {
-
-
-    private ListView listView;
+public class mainAnnouncement extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main_announcement);
-        this.listView = (ListView) findViewById(R.id.listView_announcements);
-        ArrayList announcementsList = dummyDataList();
-        this.listView.setAdapter(new AnnouncementsAdapter(this,announcementsList));
 
-        listView.setOnItemClickListener(this);
+        if(findViewById(R.id.fragment_container) != null){
+            if(savedInstanceState !=null){
+                return;
+            }
+            MainFragment mainFragment = new MainFragment();
+            mainFragment.setArguments(getIntent().getExtras());
+            getSupportFragmentManager().beginTransaction().add(R.id.fragment_container,mainFragment).commit();
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        }
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarMain);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -49,16 +48,11 @@ public class mainAnnouncement extends AppCompatActivity
             }
         });
 
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
             this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
     }
 
     @Override
@@ -90,7 +84,14 @@ public class mainAnnouncement extends AppCompatActivity
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
+    }
+
+    //TODO: HACER QUE EL BOTON BACK FUNCIONE MÁS RAPIDO. ¿OnResume()?
+    public void publishAnnounce(){
+        Intent intent = new Intent(this, PublishActivity.class);
+        startActivity(intent);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -102,7 +103,6 @@ public class mainAnnouncement extends AppCompatActivity
         if (id == R.id.my_announ) {
             // Handle the camera action
         } else if (id == R.id.last_announ) {
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -110,25 +110,7 @@ public class mainAnnouncement extends AppCompatActivity
         return true;
     }
 
-    private ArrayList dummyDataList(){
-        ArrayList<Announcement> array = new ArrayList<>();
 
-        for(int i=0; i<20; i++){
-            array.add(new Announcement("Ciudad"+i, "Ciudad"+(i+1)));
-        }
 
-        return array;
-    }
-    //TODO: HACER QUE EL BOTON BACK FUNCIONE MÁS RAPIDO. ¿OnResume()?
-    public void publishAnnounce(){
-        Intent intent = new Intent(this, PublishActivity.class);
-        startActivity(intent);
-    }
 
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Snackbar.make(view, "Esto nos llevará a la siguiente pantalla para ver los detalles de cada anuncio, pero aun no :D", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show();
-
-    }
 }
