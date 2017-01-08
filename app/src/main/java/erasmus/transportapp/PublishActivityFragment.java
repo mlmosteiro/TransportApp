@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -81,6 +83,11 @@ public class PublishActivityFragment extends Fragment implements OnClickListener
 
         vehicleDetailsLabel = (TextView) view.findViewById(R.id.tv_vehicleDetailsLabel);
         vehicleDetails = (EditText) view.findViewById(R.id.et_vehicleDetails);
+
+        Spinner type = (Spinner) view.findViewById(R.id.spinner_type);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),R.array.type_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        type.setAdapter(adapter);
 
         return view;
     }

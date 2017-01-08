@@ -28,4 +28,20 @@
     <string name="proposal_details">Proposal details</string>
     <string name="shipper">Shipper</string>
     <string name="carrier">Carrier</string>
+
+    <string-array name="type_array">
+        <item>Parcels</item>
+        <item>Palletized</item>
+        <item>In Bulk</item>
+        <item>Container</item>
+        <item>Furniture</item>
+        <item>Vehicles</item>
+        <item>Boats</item>
+        <item>Machinery</item>
+        <item>Animals</item>
+        <item>Move</item>
+        <item>Foods</item>
+        <item>Others</item>
+    </string-array>
+
 </resources>
