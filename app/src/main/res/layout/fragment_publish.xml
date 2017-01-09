@@ -23,22 +23,21 @@
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/rb_group"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/carrier"
+                android:id="@+id/rb_carrier"
+                android:checked="true"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shipper"
-                android:id="@+id/rb_shipper"
-                android:checked="true" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Carrier"
-                android:id="@+id/rb_carrier" />
-
+                android:text="@string/shipper"
+                android:id="@+id/rb_shipper"/>
         </RadioGroup>
 
         <LinearLayout
@@ -53,7 +52,6 @@
                 android:id="@+id/tv_priceLabel"
                 android:layout_weight="2" />
 
-            <!--TODO: CAMBIAR COMO SE PONE EL PRECIO EN EL LABEL-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,7 +65,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/sb_price"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:max="2900" />
 
         <LinearLayout
             android:orientation="horizontal"
