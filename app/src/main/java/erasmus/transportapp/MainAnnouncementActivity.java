@@ -1,12 +1,9 @@
 package erasmus.transportapp;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,14 +12,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-public class mainAnnouncement extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+import model.contracts;
+import model.userDB;
+
+public class MainAnnouncementActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main_announcement);
+
+        startDataBase();
 
         if(findViewById(R.id.fragment_container) != null){
             if(savedInstanceState !=null){
@@ -110,6 +113,32 @@ public class mainAnnouncement extends AppCompatActivity implements NavigationVie
         return true;
     }
 
+    private void startDataBase(){
+        userDB dataBaseHelper = new userDB(this);
+
+        SQLiteDatabase dataBase = dataBaseHelper.getWritableDatabase();
+
+        if(dataBase != null){
+            for(int i=0; i<20; i++){
+                String nickname = "User" + i;
+                String pswd = "hola";
+                String mail = "foo@example.com";
+                String name = "Name " + i;
+                String surname = "Surname" + i;
+
+                /*  INSERT INTO users (nickname, password, mail, name, surname)
+                    VALUES ( 'nickname', 'pswd', 'mail', 'name', 'surname' )
+                 */
+                dataBase.execSQL(
+                        "INSERT INTO " + contracts.usersEntry.tableName +"("+
+                                contracts.usersEntry.nickname + ", " + contracts.usersEntry.pswd +", " + contracts.usersEntry.mail+ ", " +
+                                contracts.usersEntry.name + ", " + contracts.usersEntry.surname +  ")"  +
+                        "VALUES('" + nickname + "', '" + pswd + "', '" + mail + "', '" + name + "', '" + surname + "' )");
+            }
+            dataBase.close();
+
+        }
+    }
 
 
 

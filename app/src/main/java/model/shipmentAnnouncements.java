@@ -1,4 +1,4 @@
-package com.example.adrinbeda.testsqlite;
+package model;
 /**
  *
  * Clase para anuncios de envío de la TransportApp
@@ -7,35 +7,22 @@ package com.example.adrinbeda.testsqlite;
 
 import java.util.Date;
 
+
+
 public class shipmentAnnouncements extends announcements {
     private String type;
 
-    public shipmentAnnouncements(users user, Date date, String origin, String destination, int price, String title, String type){
-        super(user, date, origin, destination, price, title);
+    public shipmentAnnouncements(users user, Date date, String destination, String origin, int price, String title, Date loadDate, Date downloadDate, String description, int imageId, String type) {
+        super(user, date, destination, origin, price, title, loadDate, downloadDate, description, imageId);
         this.type = type;
     }
 
-    public String getType(){
-        return this.type;
+    public shipmentAnnouncements(String origin, String destination) {
+        super(origin,destination);
+        this.type = "Other";
     }
 
-    public users getUser(){
-        return super.getUser();
-    }
-
-    public String getLocation(){
-        return super.getLocation();
-    }
-
-    public String getTitle(){
-        return super.getTitle();
-    }
-
-    public Date getDate(){
-        return super.getDate();
-    }
-
-    public int getPrice(){
-        return super.getPrice();
+    public String getType() {
+        return type;
     }
 }

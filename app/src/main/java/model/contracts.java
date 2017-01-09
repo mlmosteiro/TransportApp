@@ -1,4 +1,4 @@
-package com.example.adrinbeda.testsqlite;
+package model;
 
 import android.provider.BaseColumns;
 

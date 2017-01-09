@@ -1,4 +1,4 @@
-package com.example.adrinbeda.testsqlite; /**
+package model; /**
  *
  * Clase definida para proposals en TransportApp
  *
@@ -11,14 +11,18 @@ public class proposals {
     private int price;
     private String description;
     private String state;
-    private Date date;
+    private Date date;  //Fecha de envio de la propuesta para ordenarlas cronologicamente
+    private Date loadDate;
+    private Date downloadDate;
 
-    public proposals(users user, int price, String description, String state, Date date){
+    public proposals(users user, int price, String description, String state, Date date, Date loadDate, Date downloadDate) {
         this.user = user;
         this.price = price;
         this.description = description;
         this.state = state;
         this.date = date;
+        this.loadDate = loadDate;
+        this.downloadDate = downloadDate;
     }
 
     public users getUser(){
@@ -41,4 +45,11 @@ public class proposals {
         return this.state;
     }
 
+    public Date getLoadDate() {
+        return loadDate;
+    }
+
+    public Date getDownloadDate() {
+        return downloadDate;
+    }
 }

@@ -1,4 +1,4 @@
-package com.example.adrinbeda.testsqlite;
+package model;
 /**
  *
  * Clase para anuncios de transporte de la TransportApp
@@ -10,32 +10,17 @@ import java.util.Date;
 public class transportAnnouncements extends announcements {
     private String vhDetails;
 
-    public transportAnnouncements(users user, Date date, String origin, String destination, int price, String title, String vhDetails){
-        super(user, date, origin, destination, price, title);
+    public transportAnnouncements(users user, Date date, String destination, String origin, int price, String title, Date loadDate, Date downloadDate, String description, int imageId, String vhDetails) {
+        super(user, date, destination, origin, price, title, loadDate, downloadDate, description, imageId);
         this.vhDetails = vhDetails;
     }
 
-    public String getVhDetails(){
-        return this.vhDetails;
+    public transportAnnouncements(String origin, String destination, String vhDetails) {
+        super(origin, destination);
+        this.vhDetails = vhDetails;
     }
 
-    public users getUser(){
-        return super.getUser();
-    }
-
-    public String getLocation(){
-        return super.getLocation();
-    }
-
-    public String getTitle(){
-        return super.getTitle();
-    }
-
-    public Date getDate(){
-        return super.getDate();
-    }
-
-    public int getPrice(){
-        return super.getPrice();
+    public String getVhDetails() {
+        return vhDetails;
     }
 }

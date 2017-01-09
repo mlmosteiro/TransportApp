@@ -19,9 +19,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.util.ArrayList;
-
-import model.Announcement;
+import java.util.ArrayList;import model.announcements;
+import model.shipmentAnnouncements;
 
 
 /**
@@ -52,10 +51,10 @@ public class MainFragment extends Fragment implements AdapterView.OnItemClickLis
     }
 
     private ArrayList dummyDataList(){
-        ArrayList<Announcement> array = new ArrayList<>();
+        ArrayList<announcements> array = new ArrayList<>();
 
         for(int i=0; i<20; i++){
-            array.add(new Announcement("Ciudad"+i, "Ciudad"+(i+1)));
+            array.add(new shipmentAnnouncements("Ciudad"+i, "Ciudad"+(i+1)));
         }
         return array;
     }
