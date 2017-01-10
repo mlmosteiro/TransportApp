@@ -4,23 +4,15 @@ package erasmus.transportapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.util.ArrayList;import model.announcements;
-import model.shipmentAnnouncements;
+import java.util.ArrayList;import model.Announcements;
+import model.ShipmentAnnouncements;
 
 
 /**
@@ -51,10 +43,10 @@ public class MainFragment extends Fragment implements AdapterView.OnItemClickLis
     }
 
     private ArrayList dummyDataList(){
-        ArrayList<announcements> array = new ArrayList<>();
+        ArrayList<Announcements> array = new ArrayList<>();
 
         for(int i=0; i<20; i++){
-            array.add(new shipmentAnnouncements("Ciudad"+i, "Ciudad"+(i+1)));
+            array.add(new ShipmentAnnouncements("Ciudad"+i, "Ciudad"+(i+1)));
         }
         return array;
     }

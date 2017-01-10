@@ -5,19 +5,21 @@ package model;
  *
  **/
 
-import java.util.ArrayList;
-import java.util.Date; ;
+import android.content.ContentValues;
 
-public class users {
-    private String nickname;    // FK on DB
+import java.util.ArrayList;
+;
+
+public class Users {
+    private String nickname;
     private String pswd;
     private String name;
     private String surname;
     private String mail;
-    private ArrayList <announcements> publications;
-    private ArrayList <proposals> proposals;
+    private ArrayList <Announcements> publications;
+    private ArrayList <Proposals> proposals;
 
-    public users(String nickname, String pswd, String name, String surname, String mail){
+    public Users(String nickname, String pswd, String name, String surname, String mail){
         this.nickname = nickname;
         this.pswd = pswd;
         this.name = name;
@@ -27,7 +29,7 @@ public class users {
         this.proposals = new ArrayList<>();
     }
 
-    public users(String nickname){
+    public Users(String nickname){
         this.nickname = nickname;
         this.pswd = "hello";
         this.name = "Nombre";
@@ -56,11 +58,21 @@ public class users {
         return "User: " + this.nickname;
     }
 
-    public ArrayList<announcements> getPublications() {
+    public ArrayList<Announcements> getPublications() {
         return publications;
     }
 
-    public ArrayList<proposals> getProposals() {
+    public ArrayList<Proposals> getProposals() {
         return proposals;
+    }
+
+    public ContentValues toContentValues(){
+        ContentValues values = new ContentValues();
+        values.put(Contracts.usersEntry.nickname, this.nickname);
+        values.put(Contracts.usersEntry.pswd, this.pswd);
+        values.put(Contracts.usersEntry.name, this.name);
+        values.put(Contracts.usersEntry.surname, this.surname);
+        values.put(Contracts.usersEntry.mail, this.mail);
+        return values;
     }
 }

@@ -11,14 +11,14 @@ import android.widget.TextView;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import model.announcements;
+import model.Announcements;
 
 /**
  * Created by MaryLuz on 04/01/2017.
  */
 public class AnnouncementsAdapter extends ArrayAdapter{
     private Context context;
-    private ArrayList<announcements> dataArray;
+    private ArrayList<Announcements> dataArray;
 
     public AnnouncementsAdapter(Context context, ArrayList data) {
         super(context, R.layout.list_item_announcemet, data);

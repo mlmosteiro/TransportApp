@@ -14,8 +14,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import model.contracts;
-import model.userDB;
+import model.Contracts;
+import model.TransportAppDB;
 
 public class MainAnnouncementActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -114,7 +114,7 @@ public class MainAnnouncementActivity extends AppCompatActivity implements Navig
     }
 
     private void startDataBase(){
-        userDB dataBaseHelper = new userDB(this);
+        TransportAppDB dataBaseHelper = new TransportAppDB(this);
 
         SQLiteDatabase dataBase = dataBaseHelper.getWritableDatabase();
 
@@ -126,13 +126,13 @@ public class MainAnnouncementActivity extends AppCompatActivity implements Navig
                 String name = "Name " + i;
                 String surname = "Surname" + i;
 
-                /*  INSERT INTO users (nickname, password, mail, name, surname)
+                /*  INSERT INTO Users (nickname, password, mail, name, surname)
                     VALUES ( 'nickname', 'pswd', 'mail', 'name', 'surname' )
                  */
                 dataBase.execSQL(
-                        "INSERT INTO " + contracts.usersEntry.tableName +"("+
-                                contracts.usersEntry.nickname + ", " + contracts.usersEntry.pswd +", " + contracts.usersEntry.mail+ ", " +
-                                contracts.usersEntry.name + ", " + contracts.usersEntry.surname +  ")"  +
+                        "INSERT INTO " + Contracts.usersEntry.tableName +"("+
+                                Contracts.usersEntry.nickname + ", " + Contracts.usersEntry.pswd +", " + Contracts.usersEntry.mail+ ", " +
+                                Contracts.usersEntry.name + ", " + Contracts.usersEntry.surname +  ")"  +
                         "VALUES('" + nickname + "', '" + pswd + "', '" + mail + "', '" + name + "', '" + surname + "' )");
             }
             dataBase.close();

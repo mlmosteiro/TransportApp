@@ -5,12 +5,14 @@ package model;
  *
  **/
 
+import android.content.ContentValues;
+
 import java.util.Date;
 
 import erasmus.transportapp.R;
 
-public abstract class announcements{
-    private users user;     //Si lo hago FK me interesa String o User?... Mejor User... creo.
+public abstract class Announcements {
+    private Users user;     //Si lo hago FK me interesa String o User?... Mejor User... creo.
     private Date date;      //Fecha en la que ha sido publicado el anuncio para poder mostrarlos en orden cronologico
     private String destination;
     private String origin;
@@ -21,7 +23,7 @@ public abstract class announcements{
     private String description;
     private int imageId;
 
-    public announcements(users user, Date date, String destination, String origin, int price, String title, Date loadDate, Date downloadDate, String description, int imageId) {
+    public Announcements(Users user, Date date, String destination, String origin, int price, String title, Date loadDate, Date downloadDate, String description, int imageId) {
         this.user = user;
         this.date = date;
         this.destination = destination;
@@ -35,8 +37,8 @@ public abstract class announcements{
     }
 
     //TODO: Quitar esto en cuanto se pueda :D
-    public announcements(String origin, String destination) {
-        this.user = new users("user1");
+    public Announcements(String origin, String destination) {
+        this.user = new Users("user1");
         this.title = "Título del anuncio :D";
         this.origin = origin;
         this.destination = destination;
@@ -46,10 +48,7 @@ public abstract class announcements{
         this.imageId = R.drawable.ic_menu_my_announcements;
     }
 
-    // Tiene sentido hacer set, si vamos a crear nosotros las propias entradas de la base de datos?... xD
-
-
-    public users getUser(){
+    public Users getUser(){
         return this.user;
     }
 

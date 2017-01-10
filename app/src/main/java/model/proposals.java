@@ -1,13 +1,17 @@
 package model; /**
  *
- * Clase definida para proposals en TransportApp
+ * Clase definida para Proposals en TransportApp
  *
  **/
 
+import android.content.ContentValues;
+
 import java.util.Date;
 
-public class proposals {
-    private users user;     // FK on db
+public class Proposals {
+    private Users user;
+    private String idShipment;
+    private String idTransport;
     private int price;
     private String description;
     private String state;
@@ -15,8 +19,10 @@ public class proposals {
     private Date loadDate;
     private Date downloadDate;
 
-    public proposals(users user, int price, String description, String state, Date date, Date loadDate, Date downloadDate) {
+    public Proposals(Users user, String idShipment, String idTransport, int price, String description, String state, Date date, Date loadDate, Date downloadDate) {
         this.user = user;
+        this.idShipment = idShipment;
+        this.idTransport = idTransport;
         this.price = price;
         this.description = description;
         this.state = state;
@@ -25,7 +31,7 @@ public class proposals {
         this.downloadDate = downloadDate;
     }
 
-    public users getUser(){
+    public Users getUser(){
         return this.user;
     }
 
@@ -51,5 +57,23 @@ public class proposals {
 
     public Date getDownloadDate() {
         return downloadDate;
+    }
+
+    public String getIdShipment(){
+        return this.idShipment;
+    }
+
+    public String getIdTransport(){
+        return this.idTransport;
+    }
+
+    public ContentValues toContentValues(){
+        ContentValues values = new ContentValues();
+        values.put(Contracts.proposalsEntry.idShipment, idShipment);
+        values.put(Contracts.proposalsEntry.idTransport, idTransport);
+        values.put(Contracts.proposalsEntry.description, description);
+        values.put(String.valueOf(Contracts.proposalsEntry.price), price);
+        values.put(Contracts.proposalsEntry.state, state);
+        return values;
     }
 }
