@@ -27,8 +27,8 @@ public class Contracts {
         public static final int price = 0;
         public static final String description = "None";
         public static final String state = "None";
-        public static final Date loadDate = java.sql.Date.valueOf("aaaa-mm-dd");
-        public static final Date downloadDate = java.sql.Date.valueOf("aaaa-mm-dd");
+        public static final Date loadDate = java.sql.Date.valueOf("2017-01-01");
+        public static final Date downloadDate = java.sql.Date.valueOf("2017-01-01");
     }
 
     public static abstract class shipmentAnnouncementEntry implements BaseColumns {
@@ -36,12 +36,12 @@ public class Contracts {
         public static final String title = "title";
         public static final String origin = "origin";
         public static final String destination = "destination";
-        public static final Date loadDate = java.sql.Date.valueOf("aaaa-mm-dd");
-        public static final Date downloadDate = java.sql.Date.valueOf("aaaa-mm-dd");
+        public static final Date loadDate = java.sql.Date.valueOf("2017-01-01");
+        public static final Date downloadDate = java.sql.Date.valueOf("2017-01-10");
         public static final String description = "description";
         public static final Integer price = 0;
         public static final Integer imageId = 0;
-        public static final Date publicationDate = java.sql.Date.valueOf("aaaa-mm-dd");
+        public static final Date publicationDate = java.sql.Date.valueOf("2017-01-10");
         public static final String type ="type";
         public static final Users user = new Users("Example");
     }
@@ -51,12 +51,12 @@ public class Contracts {
         public static final String title = "title";
         public static final String origin = "origin";
         public static final String destination = "destination";
-        public static final Date loadDate = java.sql.Date.valueOf("aaaa-mm-dd");
-        public static final Date downloadDate = java.sql.Date.valueOf("aaaa-mm-dd");
+        public static final Date loadDate = java.sql.Date.valueOf("2017-01-10");
+        public static final Date downloadDate = java.sql.Date.valueOf("2017-01-10");
         public static final String description = "description";
         public static final Integer price = 0;
         public static final Integer imageId = 0;
-        public static final Date publicationDate = java.sql.Date.valueOf("aaaa-mm-dd");
+        public static final Date publicationDate = java.sql.Date.valueOf("2017-01-10");
         public static final String vehicleDetails ="vehicleDetails";
         public static final Users user = new Users("Example");
     }
