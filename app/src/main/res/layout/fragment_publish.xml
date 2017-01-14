@@ -18,7 +18,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/you_are_publishing_as"
-            android:id="@+id/tv_publishingAs" />
+            android:id="@+id/tv_publishingAs"
+            style="@style/Fields"/>
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -40,6 +41,11 @@
                 android:id="@+id/rb_shipper"/>
         </RadioGroup>
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            style="@style/Divisor" />
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -49,6 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/price"
+                style="@style/Fields"
                 android:id="@+id/tv_priceLabel"
                 android:layout_weight="2" />
 
@@ -58,7 +65,8 @@
                 android:text="$50"
                 android:id="@+id/tv_priceNumber"
                 android:layout_weight="2"
-                android:textAlignment="viewEnd" />
+                android:textAlignment="viewEnd"
+                style="@style/Fields"/>
         </LinearLayout>
 
         <SeekBar
@@ -79,14 +87,16 @@
                 android:text="@string/type"
                 android:id="@+id/tv_type"
                 android:layout_weight="2"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                style="@style/Fields"/>
 
             <Spinner
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner_type"
                 android:layout_weight="2"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                style="@style/EmptyFields"/>
         </LinearLayout>
 
         <LinearLayout
@@ -101,7 +111,8 @@
                 android:text="@string/load_date"
                 android:id="@+id/tv_loadDateLabel"
                 android:layout_gravity="center_vertical"
-                android:layout_weight="3" />
+                android:layout_weight="3"
+                style="@style/Fields"/>
 
 
             <EditText
@@ -111,7 +122,8 @@
                 android:ems="6"
                 android:id="@+id/et_loadDate"
                 android:layout_gravity="center_vertical"
-                android:editable="true" />
+                android:editable="true"
+                style="@style/EmptyFields"/>
 
             <!--TODO: Cambiar el icono de calendario-->
             <ImageButton
@@ -133,7 +145,8 @@
                 android:text="@string/download_date"
                 android:id="@+id/tv_downloadDate"
                 android:layout_weight="3"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                style="@style/Fields"/>
 
             <EditText
                 android:layout_width="wrap_content"
@@ -142,7 +155,8 @@
                 android:ems="6"
                 android:id="@+id/et_downloadDate"
                 android:layout_gravity="center_vertical"
-                android:editable="true" />
+                android:editable="true"
+                style="@style/EmptyFields"/>
 
             <!--TODO: Cambiar el icono de calendario-->
             <ImageButton
@@ -165,14 +179,16 @@
                 android:text="@string/origin"
                 android:id="@+id/tv_originLabel"
                 android:layout_weight="3"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                style="@style/Fields"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_originText"
                 android:text="Origin"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                style="@style/EmptyFields"/>
 
             <!--TODO: Cambiar el icono de location-->
             <ImageButton
@@ -194,14 +210,16 @@
                 android:text="@string/destination"
                 android:id="@+id/tv_destinationLabel"
                 android:layout_weight="3"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                style="@style/Fields"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_destinationText"
                 android:text="Destination"
-                android:layout_gravity="center_vertical" />
+                android:layout_gravity="center_vertical"
+                style="@style/EmptyFields"/>
 
             <!--TODO: Cambiar el icono de location-->
             <ImageButton
@@ -213,27 +231,37 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            style="@style/Divisor" />
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/vehicle_details"
-            android:id="@+id/tv_vehicleDetailsLabel" />
+            android:id="@+id/tv_vehicleDetailsLabel"
+            style="@style/Fields"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_vehicleDetails" />
+            android:id="@+id/et_vehicleDetails"
+            style="@style/EmptyFields"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/publication_details"
-            android:id="@+id/tv_publicationDetailsLabel" />
+            android:id="@+id/tv_publicationDetailsLabel"
+            style="@style/Fields"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_publicationDetails" />
+            android:id="@+id/et_publicationDetails"
+            style="@style/EmptyFields"/>
 
     </LinearLayout>
 

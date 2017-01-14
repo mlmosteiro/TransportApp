@@ -80,10 +80,10 @@ public class TransportAppDB extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(createUsersTable);
-        db.execSQL(createProposalsTable);
-        db.execSQL(createShipmentAnnouncementTable);
-        db.execSQL(createTransportAnnouncementTable);
+      //  db.execSQL(createUsersTable);
+      //  db.execSQL(createProposalsTable);
+      //  db.execSQL(createShipmentAnnouncementTable);
+      //  db.execSQL(createTransportAnnouncementTable);
 
         //testDB(db);
     }

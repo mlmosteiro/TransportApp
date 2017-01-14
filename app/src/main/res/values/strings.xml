@@ -29,8 +29,10 @@
     <string name="shipper">Shipper</string>
     <string name="carrier">Carrier</string>
 
-    <string-array name="type_array">
-        <item>Parcels</item>
+       
+    <string-array name="type_array">
+               
+        <item>Parcels</item>
         <item>Palletized</item>
         <item>In Bulk</item>
         <item>Container</item>
@@ -42,6 +44,8 @@
         <item>Move</item>
         <item>Foods</item>
         <item>Others</item>
-    </string-array>
+           
+    </string-array>
+    <string name="title_activity_maps">Map</string>
 
 </resources>

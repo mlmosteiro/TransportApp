@@ -1,0 +1,19 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=47:4B:E0:A3:84:3C:A6:AE:1F:47:B5:D0:84:2C:37:FC:9E:55:32:F4%3Berasmus.transportapp
+
+    You can also add your credentials to an existing key, using this line:
+    47:4B:E0:A3:84:3C:A6:AE:1F:47:B5:D0:84:2C:37:FC:9E:55:32:F4;erasmus.transportapp
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB4_H8fKqXWotbd3MJSr3mFpleK4GhfuJk</string>
+</resources>

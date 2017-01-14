@@ -25,7 +25,7 @@ public class MainAnnouncementActivity extends AppCompatActivity implements Navig
 
         setContentView(R.layout.activity_main_announcement);
 
-        startDataBase();
+   //     startDataBase();
 
         if(findViewById(R.id.fragment_container) != null){
             if(savedInstanceState !=null){

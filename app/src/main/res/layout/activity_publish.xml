@@ -22,15 +22,12 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:id="@+id/btn_publish"
-                android:textSize="12sp"
-                android:background="@null"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:textColor="#FFF"
                 android:text="@string/publish"
-                android:onClick="publishButton"/>
+                android:onClick="publishButton"
+                style="@style/ToolbarButton"/>
 
         </android.support.v7.widget.Toolbar>
 

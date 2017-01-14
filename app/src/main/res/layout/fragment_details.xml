@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="erasmus.transportapp.DetailsActivityFragment"
-    tools:showIn="@layout/activity_main_announcement" >
+    tools:showIn="@layout/activity_details" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,97 +17,120 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Title of announcement"
+            style="@style/AnnounceTitle"
             android:id="@+id/tv_title" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            style="@style/Divisor" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="1"
             android:layout_gravity="center"
             android:layout_marginTop="10dp">
-
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1">
+                android:layout_weight="2">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/origin"
+                    android:id="@+id/tv_originLabel"
+                    style="@style/Labels"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Fields"
+                    android:text="Ciudad1"
+                    android:id="@+id/tv_origin"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/destination"
+                    android:id="@+id/tv_destinationLabel"
+                    style="@style/Labels"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Fields"
+                    android:text="Ciudad2"
+                    android:id="@+id/tv_destination"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:measureWithLargestChild="false"
+                android:longClickable="false"
+                android:layout_weight="2">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="@string/load_date"
                     android:id="@+id/tv_loadDateLabel"
-                    android:textStyle="bold" />
+                    style="@style/Labels" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    style="@style/Fields"
                     android:text="DD/MM/YYYY"
                     android:id="@+id/tv_loadDate" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="@string/download_date"
                     android:id="@+id/tv_downloadDateLabel"
-                    android:textStyle="bold" />
+                    style="@style/Labels" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    style="@style/Fields"
                     android:text="DD/MM/YYYY"
                     android:id="@+id/tv_downloadDate" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="@string/origin"
-                    android:id="@+id/tv_originLabel"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Ciudad1"
-                    android:id="@+id/tv_origin" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="@string/destination"
-                    android:id="@+id/tv_destinationLabel"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="Ciudad2"
-                    android:id="@+id/tv_destination" />
 
 
             </LinearLayout>
 
-            <ImageView
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@android:mipmap/sym_def_app_icon"
-                android:id="@+id/iv_mapa"
-                android:layout_gravity="center"
-                android:layout_weight="2" />
+                style="@style/PriceDetail"
+                android:text="$50"
+                android:id="@+id/tv_priceNumber" />
 
         </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            style="@style/Divisor" />
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -117,7 +140,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:textAlignment="center"
-            android:singleLine="false" />
+            style="@style/Description"/>
 
    </LinearLayout>
 
