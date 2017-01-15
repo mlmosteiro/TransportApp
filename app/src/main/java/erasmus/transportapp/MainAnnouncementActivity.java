@@ -18,14 +18,18 @@ import model.Contracts;
 import model.TransportAppDB;
 
 public class MainAnnouncementActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
+    TransportAppDB myDBHelper ;
+    SQLiteDatabase myDB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main_announcement);
 
-   //     startDataBase();
+        myDBHelper = new TransportAppDB( this);
+        myDB=myDBHelper.getWritableDatabase();
+        myDBHelper.testDB(myDB);
+        //     startDataBase();
 
         if(findViewById(R.id.fragment_container) != null){
             if(savedInstanceState !=null){
@@ -126,14 +130,14 @@ public class MainAnnouncementActivity extends AppCompatActivity implements Navig
                 String name = "Name " + i;
                 String surname = "Surname" + i;
 
-                /*  INSERT INTO Users (nickname, password, mail, name, surname)
-                    VALUES ( 'nickname', 'pswd', 'mail', 'name', 'surname' )
-                 */
+
                 dataBase.execSQL(
                         "INSERT INTO " + Contracts.usersEntry.tableName +"("+
                                 Contracts.usersEntry.nickname + ", " + Contracts.usersEntry.pswd +", " + Contracts.usersEntry.mail+ ", " +
                                 Contracts.usersEntry.name + ", " + Contracts.usersEntry.surname +  ")"  +
-                        "VALUES('" + nickname + "', '" + pswd + "', '" + mail + "', '" + name + "', '" + surname + "' )");
+                        "VALUE   /*  INSERT INTO Users (nickname, password, mail, name, surname)\n" +
+                                "                    VALUES ( 'nickname', 'pswd', 'mail', 'name', 'surname' )\n" +
+                                "                 */S('" + nickname + "', '" + pswd + "', '" + mail + "', '" + name + "', '" + surname + "' )");
             }
             dataBase.close();
 

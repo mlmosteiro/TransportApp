@@ -34,7 +34,7 @@ public class TransportAnnouncements extends Announcements {
         values.put(Contracts.transportAnnouncementEntry.origin, this.getOrigin());
         values.put(Contracts.transportAnnouncementEntry.destination, this.getDestination());
         values.put(String.valueOf(Contracts.transportAnnouncementEntry.price), this.getPrice());
-        values.put(String.valueOf(Contracts.transportAnnouncementEntry.imageId), this.getImageId());
+        values.put(String.valueOf(Contracts.transportAnnouncementEntry.imageID), this.getImageId());
         return values;
     }
 }

@@ -23,12 +23,18 @@ public class Contracts {
         public static final String tableName = "Proposals";
         public static final String idShipment = "idShipment";
         public static final String idTransport = "idTransport";
-        public static final Users user = new Users("Example");
-        public static final int price = 0;
-        public static final String description = "None";
-        public static final String state = "None";
-        public static final Date loadDate = java.sql.Date.valueOf("2017-01-01");
-        public static final Date downloadDate = java.sql.Date.valueOf("2017-01-01");
+       // public static final Users user = new Users("Example");
+        public static final String price = "price";
+        public static final String description = "description";
+        public static final String state = "state";
+        public static final String loadDate = "loadDate";
+        public static final String downloadDate = "downloadDate";
+
+//        public static final int price = 0;
+//        public static final String description = "None";
+//        public static final String state = "None";
+//        public static final Date loadDate = java.sql.Date.valueOf("2017-01-01");
+//        public static final Date downloadDate = java.sql.Date.valueOf("2017-01-01");
     }
 
     public static abstract class shipmentAnnouncementEntry implements BaseColumns {
@@ -36,14 +42,22 @@ public class Contracts {
         public static final String title = "title";
         public static final String origin = "origin";
         public static final String destination = "destination";
-        public static final Date loadDate = java.sql.Date.valueOf("2017-01-01");
-        public static final Date downloadDate = java.sql.Date.valueOf("2017-01-10");
         public static final String description = "description";
+        public static final String price = "price";
+        public static final String imageID = "imageID";
+        public static final String publicationDate = "publicationDate";
+        public static final String loadDate = "loadDate";
+        public static final String downloadDate = "downloadDate";
+        public static final String type ="type";
+        public static final String idUser ="idUser";
+        /*
         public static final Integer price = 0;
         public static final Integer imageId = 0;
         public static final Date publicationDate = java.sql.Date.valueOf("2017-01-10");
+         public static final Date loadDate = java.sql.Date.valueOf("2017-01-01");
+        public static final Date downloadDate = java.sql.Date.valueOf("2017-01-10");
         public static final String type ="type";
-        public static final Users user = new Users("Example");
+        public static final Users user = new Users("Example");*/
     }
 
     public static abstract class transportAnnouncementEntry implements BaseColumns {
@@ -51,14 +65,15 @@ public class Contracts {
         public static final String title = "title";
         public static final String origin = "origin";
         public static final String destination = "destination";
-        public static final Date loadDate = java.sql.Date.valueOf("2017-01-10");
-        public static final Date downloadDate = java.sql.Date.valueOf("2017-01-10");
         public static final String description = "description";
-        public static final Integer price = 0;
-        public static final Integer imageId = 0;
-        public static final Date publicationDate = java.sql.Date.valueOf("2017-01-10");
+        public static final String price = "price";
+        public static final String imageID = "imageID";
+        public static final String publicationDate = "publicationDate";
+        public static final String loadDate = "loadDate";
+        public static final String downloadDate = "downloadDate";
+        public static final String type ="type";
         public static final String vehicleDetails ="vehicleDetails";
-        public static final Users user = new Users("Example");
+        public static final String idUser ="idUser";
     }
 
 }

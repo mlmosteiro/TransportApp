@@ -72,7 +72,7 @@ public class Proposals {
         values.put(Contracts.proposalsEntry.idShipment, idShipment);
         values.put(Contracts.proposalsEntry.idTransport, idTransport);
         values.put(Contracts.proposalsEntry.description, description);
-        values.put(String.valueOf(Contracts.proposalsEntry.price), price);
+        values.put(Contracts.proposalsEntry.price, price);
         values.put(Contracts.proposalsEntry.state, state);
         return values;
     }
