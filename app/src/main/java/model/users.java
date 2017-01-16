@@ -16,7 +16,7 @@ public class Users {
     private String name;
     private String surname;
     private String mail;
-    private ArrayList <Announcements> publications;
+    private ArrayList <Announcement> publications;
     private ArrayList <Proposals> proposals;
 
     public Users(String nickname, String pswd, String name, String surname, String mail){
@@ -58,7 +58,7 @@ public class Users {
         return "User: " + this.nickname;
     }
 
-    public ArrayList<Announcements> getPublications() {
+    public ArrayList<Announcement> getPublications() {
         return publications;
     }
 

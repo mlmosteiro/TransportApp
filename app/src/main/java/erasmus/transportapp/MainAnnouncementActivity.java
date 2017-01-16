@@ -20,16 +20,19 @@ import model.TransportAppDB;
 public class MainAnnouncementActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     TransportAppDB myDBHelper ;
     SQLiteDatabase myDB;
+    private Contents contents;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        contents = new Contents();
 
         setContentView(R.layout.activity_main_announcement);
 
         myDBHelper = new TransportAppDB( this);
         myDB=myDBHelper.getWritableDatabase();
         myDBHelper.testDB(myDB);
-        //     startDataBase();
+        myDB.close();
 
         if(findViewById(R.id.fragment_container) != null){
             if(savedInstanceState !=null){
@@ -115,33 +118,6 @@ public class MainAnnouncementActivity extends AppCompatActivity implements Navig
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-
-    private void startDataBase(){
-        TransportAppDB dataBaseHelper = new TransportAppDB(this);
-
-        SQLiteDatabase dataBase = dataBaseHelper.getWritableDatabase();
-
-        if(dataBase != null){
-            for(int i=0; i<20; i++){
-                String nickname = "User" + i;
-                String pswd = "hola";
-                String mail = "foo@example.com";
-                String name = "Name " + i;
-                String surname = "Surname" + i;
-
-
-                dataBase.execSQL(
-                        "INSERT INTO " + Contracts.usersEntry.tableName +"("+
-                                Contracts.usersEntry.nickname + ", " + Contracts.usersEntry.pswd +", " + Contracts.usersEntry.mail+ ", " +
-                                Contracts.usersEntry.name + ", " + Contracts.usersEntry.surname +  ")"  +
-                        "VALUE   /*  INSERT INTO Users (nickname, password, mail, name, surname)\n" +
-                                "                    VALUES ( 'nickname', 'pswd', 'mail', 'name', 'surname' )\n" +
-                                "                 */S('" + nickname + "', '" + pswd + "', '" + mail + "', '" + name + "', '" + surname + "' )");
-            }
-            dataBase.close();
-
-        }
     }
 
 

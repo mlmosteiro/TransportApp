@@ -4,6 +4,7 @@ package erasmus.transportapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +12,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.util.ArrayList;import model.Announcements;
+import java.util.ArrayList;import model.Announcement;
+import model.Location;
 import model.ShipmentAnnouncements;
 
 
@@ -21,6 +23,7 @@ import model.ShipmentAnnouncements;
  */
 public class MainFragment extends Fragment implements AdapterView.OnItemClickListener {
     private ListView listView;
+
 
     public MainFragment() {
         // Required empty public constructor
@@ -33,8 +36,8 @@ public class MainFragment extends Fragment implements AdapterView.OnItemClickLis
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
         this.listView = (ListView) view.findViewById(R.id.listView_announcements);
-        ArrayList announcementsList = dummyDataList();
-        this.listView.setAdapter(new AnnouncementsAdapter(getContext(),announcementsList));
+        Contents.getInstance().setAnnouncementsList(dummyDataList());
+        this.listView.setAdapter(new AnnouncementsAdapter(getContext(),Contents.getInstance().getAnnouncementsList()));
 
         listView.setOnItemClickListener(this);
 
@@ -43,10 +46,12 @@ public class MainFragment extends Fragment implements AdapterView.OnItemClickLis
     }
 
     private ArrayList dummyDataList(){
-        ArrayList<Announcements> array = new ArrayList<>();
+        ArrayList<Announcement> array = new ArrayList<>();
 
-        for(int i=0; i<20; i++){
-            array.add(new ShipmentAnnouncements("Ciudad"+i, "Ciudad"+(i+1)));
+        for(Integer i=0; i<20; i++){
+            Location origin = new Location(i, i+i, "Ciudad" + i);
+            Location destination = new Location(i*i, i+1, "Ciudad" + i+1);
+            array.add(new ShipmentAnnouncements(i, origin,destination));
         }
         return array;
     }
@@ -55,6 +60,7 @@ public class MainFragment extends Fragment implements AdapterView.OnItemClickLis
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
        Intent intent = new Intent(getContext(), DetailsActivity.class);
+        intent.putExtra(DetailsActivityFragment.ANNOUNCEMENT_POSSITION, position);
         startActivity(intent);
 
        // DetailsActivityFragment detailsFragment = new DetailsActivityFragment();
