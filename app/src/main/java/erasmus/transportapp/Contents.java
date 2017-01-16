@@ -6,11 +6,15 @@ import model.Announcement;
 
 /**
  * Created by MaryLuz on 16/01/2017.
+ * Mobile applications
+ * TransportApp
+ * Erasmus 2016-2017
  */
 public class Contents {
     private static Contents ourInstance = new Contents();
 
     private ArrayList<Announcement> announcementsList;
+    public static String ANNOUNCEMENT_POSSITION = "ANNOUNCEMENT_POSSITION";
 
     public static Contents getInstance() {
         return ourInstance;

@@ -24,19 +24,20 @@ import model.Announcement;
  * A placeholder fragment containing a simple view.
  */
 public class DetailsActivityFragment extends Fragment {
-    MapView mMapView;
-    private GoogleMap googleMap;
-    public static String ANNOUNCEMENT_POSSITION = "ANNOUNCEMENT_POSSITION";
     private Announcement announcement;
+    private MapView mMapView;
+    private GoogleMap googleMap;
+
     public DetailsActivityFragment() {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         View rootView = inflater.inflate(R.layout.fragment_details, container, false);
+
         Bundle args = getArguments();
-        this.announcement = Contents.getInstance().getAnnouncementsList().get(args.getInt(ANNOUNCEMENT_POSSITION));
+        this.announcement = Contents.getInstance().getAnnouncementsList().get(args.getInt(Contents.ANNOUNCEMENT_POSSITION));
 
         mMapView = (MapView) rootView.findViewById(R.id.mapView);
         mMapView.onCreate(savedInstanceState);
@@ -56,13 +57,6 @@ public class DetailsActivityFragment extends Fragment {
 
                 // For showing a move to my location button
                 if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                    // TODO: Consider calling
-                    //    ActivityCompat#requestPermissions
-                    // here to request the missing permissions, and then overriding
-                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                    //                                          int[] grantResults)
-                    // to handle the case where the user grants the permission. See the documentation
-                    // for ActivityCompat#requestPermissions for more details.
                     return;
                 }
                 googleMap.setMyLocationEnabled(true);

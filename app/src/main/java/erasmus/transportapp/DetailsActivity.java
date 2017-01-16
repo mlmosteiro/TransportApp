@@ -11,7 +11,6 @@ import model.Announcement;
 
 public class DetailsActivity extends AppCompatActivity {
 
-    private Announcement announcement;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,18 +35,15 @@ public class DetailsActivity extends AppCompatActivity {
 
         }
 
-        Button proposalBtn = (Button) findViewById(R.id.btn_sendPorposal);
+        final Button proposalBtn = (Button) findViewById(R.id.btn_sendPorposal);
         proposalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SendPorposalFragment proposalFragment = new SendPorposalFragment();
 
-        /*Bundle args = new Bundle();
-            TODO:  Aqui poner los argumentos necesarios como para poder realizar la propuesta
-        */
+                SendPorposalFragment proposalFragment = new SendPorposalFragment();
+                proposalFragment.setArguments(getIntent().getExtras());
 
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
                 transaction.replace(R.id.fragment_container, proposalFragment);
                 transaction.addToBackStack(null); //En el método addToBackStack() se incluye un parámetro de string opcional que especifica un nombre único para la transacción. El nombre no es necesario a menos que pienses realizar operaciones avanzadas //
                 transaction.commit();

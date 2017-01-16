@@ -1,11 +1,13 @@
 package erasmus.transportapp;
 
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationManager;
+import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -85,10 +87,11 @@ public class PublishActivityFragment extends Fragment implements OnClickListener
         priceBar = (SeekBar) view.findViewById(R.id.sb_price);
         //TODO Hacer esto mejor
         priceBar.setProgress(1500);
+        price.setText(String.format("$%s", Integer.toString(priceBar.getProgress() + 50)));
         priceBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                price.setText("$" + Integer.toString(progress+50));
+                price.setText(String.format("$%s", Integer.toString(progress + 50)));
             }
 
             @Override
@@ -134,7 +137,8 @@ public class PublishActivityFragment extends Fragment implements OnClickListener
 
     private DatePickerDialog setDataPicker(final EditText fild) {
         Calendar newCalendar = Calendar.getInstance();
-        DatePickerDialog datePickerDialog = new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
+
+        return new DatePickerDialog(getActivity(), new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 Calendar newDate = Calendar.getInstance();
@@ -142,8 +146,6 @@ public class PublishActivityFragment extends Fragment implements OnClickListener
                 fild.setText(dateFormatter.format(newDate.getTime()));
             }
         }, newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
-
-        return datePickerDialog;
     }
 
     @Override
@@ -156,43 +158,18 @@ public class PublishActivityFragment extends Fragment implements OnClickListener
             PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
             try {
                 startActivityForResult(builder.build(getActivity()), PLACE_PICKER_REQUEST_ORIGIN);
-            } catch (GooglePlayServicesRepairableException e) {
-                e.printStackTrace();
-            } catch (GooglePlayServicesNotAvailableException e) {
+            } catch (GooglePlayServicesRepairableException | GooglePlayServicesNotAvailableException e) {
                 e.printStackTrace();
             }
         }else if ( view == destinationButton){
             PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
             try {
                 startActivityForResult(builder.build(getActivity()), PLACE_PICKER_REQUEST_DESTINATION);
-            } catch (GooglePlayServicesRepairableException e) {
-                e.printStackTrace();
-            } catch (GooglePlayServicesNotAvailableException e) {
+            } catch (GooglePlayServicesRepairableException | GooglePlayServicesNotAvailableException e) {
                 e.printStackTrace();
             }
         }
     }
-
-    private LatLngBounds getLatLngBounds() {
-        LocationManager lm = (LocationManager) getActivity().getSystemService(getActivity().LOCATION_SERVICE);
-        if (ActivityCompat.checkSelfPermission(getActivity(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return null;
-        }
-        Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-        double longitude = location.getLongitude();
-        double latitude = location.getLatitude();
-
-        LatLngBounds latLngBounds = new LatLngBounds(new LatLng(latitude- 0.01,longitude-0.01), new LatLng(latitude+0.01, longitude+0.01));
-        return  latLngBounds;
-    }
-
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -210,6 +187,25 @@ public class PublishActivityFragment extends Fragment implements OnClickListener
         }
     }
 
+    @Nullable
+    private LatLngBounds getLatLngBounds() {
+        LocationManager lm = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
+        if (ActivityCompat.checkSelfPermission(getActivity(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return null;
+        }
+        Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        double longitude = location.getLongitude();
+        double latitude = location.getLatitude();
+
+        return new LatLngBounds(new LatLng(latitude- 0.01,longitude-0.01), new LatLng(latitude+0.01, longitude+0.01));
+    }
 
     //TODO Crear el objeto Announcement nuevo teniendo cuidado con Location
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -220,8 +216,6 @@ public class PublishActivityFragment extends Fragment implements OnClickListener
                 String toastMsg = String.format("Place: %s , %s", place.getName(), place.getAddress());
                 //TODO quitar esto si no hace falta :D
                 Toast.makeText(getActivity(), toastMsg, Toast.LENGTH_LONG).show();
-
-
             }
         }
         else if (requestCode == PLACE_PICKER_REQUEST_DESTINATION) {
@@ -234,5 +228,7 @@ public class PublishActivityFragment extends Fragment implements OnClickListener
             }
         }
     }
+
+
 }
 

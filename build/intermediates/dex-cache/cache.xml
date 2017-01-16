@@ -3,300 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="e719de687ac45141de3dd613907860a495580af0">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.2.1_11d459e333f66b6b8150c1d0488e9ecb27c6f344\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_45c90463fa33cbd989c23b3c16f4a313e68bbecf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="36e2b438f9b0d68fb2482c8f389e249e32840cff">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.2.1_97e75e950d9282caf0b28f676c4dd5a0e842b7df\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="8aada8a0e9e9b3ecdda5e80f17c6a51a468e302a">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-9.2.1_91e3ad5317c8c793f6e406c029f10f47532ce6cd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="7bb417e9ac8645285342935679e75d371b58b62b">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-9.2.1_13810bd61440be36d6d45a7b373b5c5a6410b00a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="77e2e4803396fa79009ace04d9be84184aafcc31">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-9.2.1_e836940af396b93e37537d0c2382577f7bd1c30d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="081ced8ab77e606b6743c27cfe93dc450447b046">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-9.2.1_155095fcc22d97aa8d53bc7eb6947ec19d0d4948\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_aa34c15ff05cd191c87df0251accd7282a336a06\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="3a42c5696fa39930d39770f7e5552a9c965fbe09">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-9.2.1_5c060b6c6bd249f0883e06637d05c67d7122a9fb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ac78f93fc89c497a65f9d9a352cd405996d2f65a">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.2.1_3ba6b2b7d6ed3d02a13d9030faf6fe1fe8e785ef\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="4c2b01baa64ba25f8dbdf7f7f828bc5664dab55e">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-9.2.1_07e5327e2f2a5f82ae4f67e448b08d14e3e86267\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_aa7b0dd99e7c7646d1ba4ecb121fca1ab750809f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="428c9bac95b2f72921224e289553a04bea61cda5">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-9.2.1_04c394ab505c256c017eafb8e7d169b2558ff47f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="2506c5893e125e2f9cfc522378e893620c21b109">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.2.1_eebaf0cdaabb839dbb20f899c260c82350052792\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="5337354083e89ed67151859ab0b6b80935c60eaf">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.2.1_1ceb0d96c2f57efe9d387ded4570796e40b732cd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.2.1_aa6721caea38e73cf7ebad494534fa807414ab70\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="bbd51be332bace144b3d16501ec0af379c3c8750">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-9.2.1_94039bd3068dc36b88173a1b58eae730485cec0e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="90eeba67a669f8fb24db0f821ef81703fe7a02bc">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-9.2.1_309759e7f67e3eba30085ed4db1d0fb81bc91ee0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.2.1_8c3213591ed731845f6ba0d32c392cc9633a293e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="35a01d7cb4ff6b5976777bf5827fd8f206fb8757">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.2.1_79b33eaf650817197cc017c6d49906924a13db43\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="d41b5d21cc9dd7d210f0ae82ac509ba7f091d611">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.2.1_46d937710c17c85abeb1b01ca58b51632a63a2b0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="d064f813cd835f17853e39221b247cf6a997a2db">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-9.2.1_e6030ba70293dc6b124474e959a311a9c58fefdd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="07c569a77f437c5c71eac8b1b636a50bebb69a93">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.2.1_7028a7e41cbd12c67da3a291d676fdb043e6088b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-contextmanager\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ccc963cafe59ce185c49f47baff7eedcb8589bdf">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-contextmanager-9.2.1_31f1a1b4e6f823095adfb0c830f11ede9a26f438\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="1141496362c8876f0da4b645fbaf22c0a3618372">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-9.2.1_8a43b0a730216f18548dd54ad11ab36f41c88d2a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="edf9a22ebf25281619265079aec8f5d433da1a5c">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-9.2.1_d1723368059aca90ebc942a221fe7177c2734259\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="05a2710d284c03087013a667a324c9e2aba5bc91">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-9.2.1_d47ad693941a9223f2d0b80786bcef4412307282\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="6d2f508d1a9fa0fbe1653595e484800c08afb42c">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-9.2.1_1f075943e1816abf567fac28e4a42388ff3be098\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.2.1_dcee1e5dde7d7d0f48f3fdc4c8f225e5f7311eb4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ee19e33a798d11a5cf309a40155b8223fadcdeea">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.2.1_c5686367c5f32eab25f4223202c24dab1964979c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="48917c60ea81213ea39cbd7123996a5401106dc3">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.2.1_527f6cd1bfb969ba4420d37936b42420085e30b5\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\9.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="6c09228ff931eb30b68dd27fe34ed90d978b6892">
-        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-9.2.1_8db9db20867a27e995b781c3faf7ff400122cafb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
         <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_3888ea05142157aaf1a088cacca90d369e301a56\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e719de687ac45141de3dd613907860a495580af0">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.2.1_11d459e333f66b6b8150c1d0488e9ecb27c6f344\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -336,6 +57,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_45c90463fa33cbd989c23b3c16f4a313e68bbecf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="36e2b438f9b0d68fb2482c8f389e249e32840cff">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.2.1_97e75e950d9282caf0b28f676c4dd5a0e842b7df\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -363,12 +102,57 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8aada8a0e9e9b3ecdda5e80f17c6a51a468e302a">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-9.2.1_91e3ad5317c8c793f6e406c029f10f47532ce6cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\9.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="def5530cb13311617fc8f962e2a90225bb6904e2">
         <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-9.2.1_c36ec27e88b45b0935ac3946124718f6e78351a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7bb417e9ac8645285342935679e75d371b58b62b">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-9.2.1_13810bd61440be36d6d45a7b373b5c5a6410b00a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="77e2e4803396fa79009ace04d9be84184aafcc31">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-9.2.1_e836940af396b93e37537d0c2382577f7bd1c30d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="081ced8ab77e606b6743c27cfe93dc450447b046">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-9.2.1_155095fcc22d97aa8d53bc7eb6947ec19d0d4948\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_aa34c15ff05cd191c87df0251accd7282a336a06\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -381,12 +165,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3a42c5696fa39930d39770f7e5552a9c965fbe09">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-9.2.1_5c060b6c6bd249f0883e06637d05c67d7122a9fb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ac78f93fc89c497a65f9d9a352cd405996d2f65a">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.2.1_3ba6b2b7d6ed3d02a13d9030faf6fe1fe8e785ef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4c2b01baa64ba25f8dbdf7f7f828bc5664dab55e">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-9.2.1_07e5327e2f2a5f82ae4f67e448b08d14e3e86267\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\MaryLuz\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
         <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_7ed801f0f738b6a0747ae577728a28d76b771033\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_aa7b0dd99e7c7646d1ba4ecb121fca1ab750809f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -417,6 +237,42 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="428c9bac95b2f72921224e289553a04bea61cda5">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-9.2.1_04c394ab505c256c017eafb8e7d169b2558ff47f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2506c5893e125e2f9cfc522378e893620c21b109">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.2.1_eebaf0cdaabb839dbb20f899c260c82350052792\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5337354083e89ed67151859ab0b6b80935c60eaf">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.2.1_1ceb0d96c2f57efe9d387ded4570796e40b732cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.2.1_aa6721caea38e73cf7ebad494534fa807414ab70\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\9.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -435,6 +291,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bbd51be332bace144b3d16501ec0af379c3c8750">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-9.2.1_94039bd3068dc36b88173a1b58eae730485cec0e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\9.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -444,12 +309,57 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="90eeba67a669f8fb24db0f821ef81703fe7a02bc">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-9.2.1_309759e7f67e3eba30085ed4db1d0fb81bc91ee0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.2.1_8c3213591ed731845f6ba0d32c392cc9633a293e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="35a01d7cb4ff6b5976777bf5827fd8f206fb8757">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.2.1_79b33eaf650817197cc017c6d49906924a13db43\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
         <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_e02c4c44963f732ec1767c2a954325d880fa0904\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d41b5d21cc9dd7d210f0ae82ac509ba7f091d611">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.2.1_46d937710c17c85abeb1b01ca58b51632a63a2b0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d064f813cd835f17853e39221b247cf6a997a2db">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-9.2.1_e6030ba70293dc6b124474e959a311a9c58fefdd\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -468,6 +378,33 @@
         revision="23.0.3"
         sha1="310ef01419435979cc82847cf085799a8d00e7e9">
         <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.2.1_aec41c3dd7be41d13152f5c26619f80538ef9469\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="07c569a77f437c5c71eac8b1b636a50bebb69a93">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.2.1_7028a7e41cbd12c67da3a291d676fdb043e6088b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-contextmanager\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ccc963cafe59ce185c49f47baff7eedcb8589bdf">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-contextmanager-9.2.1_31f1a1b4e6f823095adfb0c830f11ede9a26f438\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1141496362c8876f0da4b645fbaf22c0a3618372">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-9.2.1_8a43b0a730216f18548dd54ad11ab36f41c88d2a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -498,6 +435,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="edf9a22ebf25281619265079aec8f5d433da1a5c">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-9.2.1_d1723368059aca90ebc942a221fe7177c2734259\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -507,12 +453,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="05a2710d284c03087013a667a324c9e2aba5bc91">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-9.2.1_d47ad693941a9223f2d0b80786bcef4412307282\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6d2f508d1a9fa0fbe1653595e484800c08afb42c">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-9.2.1_1f075943e1816abf567fac28e4a42388ff3be098\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
         <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_87c91c09b9a635fbc157da9f48c19e9f6bda60df\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.2.1_dcee1e5dde7d7d0f48f3fdc4c8f225e5f7311eb4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ee19e33a798d11a5cf309a40155b8223fadcdeea">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.2.1_c5686367c5f32eab25f4223202c24dab1964979c\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -538,8 +520,26 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="13cbbb874680664c6a5d0ee79b838f4b8607d65e">
+        sha1="ce960fa0ad8f0dd12fa41e6e8751dcaefa9d5a3d">
         <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_52eb8aed7c4cadb3fc0abaab04d37c9177b71040\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="48917c60ea81213ea39cbd7123996a5401106dc3">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.2.1_527f6cd1bfb969ba4420d37936b42420085e30b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6c09228ff931eb30b68dd27fe34ed90d978b6892">
+        <dex dex="C:\Users\MaryLuz\Documents\Informatica\Tercero\TransportApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-9.2.1_8db9db20867a27e995b781c3faf7ff400122cafb\classes.dex" />
     </item>
     <item
         is-multidex="true"
