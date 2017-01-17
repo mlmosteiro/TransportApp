@@ -46,6 +46,17 @@
             android:layout_height="2dip"
             style="@style/Divisor" />
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:id="@+id/et_Title"
+            android:layout_gravity="center_vertical"
+            android:editable="true"
+            android:text="@string/title"
+            android:textAppearance="@id/text_empty_message"
+            style="@style/EmptyFields"/>
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"

@@ -11,9 +11,18 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.util.ArrayList;import model.Announcement;
+import java.util.ArrayList;
+import java.util.Random;
+
+import model.Announcement;
 import model.Location;
 import model.ShipmentAnnouncements;
+import model.typeVehicle.Animal;
+import model.typeVehicle.Food;
+import model.typeVehicle.Furniture;
+import model.typeVehicle.Machinery;
+import model.typeVehicle.Type;
+import model.typeVehicle.Vehicle;
 
 
 /**
@@ -46,11 +55,18 @@ public abstract class MainFragment extends Fragment implements AdapterView.OnIte
 
     private ArrayList<Announcement> dummyDataList(){
         ArrayList<Announcement> array = new ArrayList<>();
+        ArrayList<Type> types = new ArrayList<>();
+        types.add(new Food());
+        types.add(new Furniture());
+        types.add(new Vehicle());
+        types.add(new Animal());
+        types.add(new Machinery());
+        Random r = new Random();
 
         for(Integer i=0; i<20; i++){
             Location origin = new Location(i, i+i, "Ciudad" + i);
             Location destination = new Location(i*i, i+1, "Ciudad" + i+1);
-            array.add(new ShipmentAnnouncements(i, origin,destination));
+            array.add(new ShipmentAnnouncements(i, origin,destination, types.get(r.nextInt(5 - 0))));
         }
         return array;
     }

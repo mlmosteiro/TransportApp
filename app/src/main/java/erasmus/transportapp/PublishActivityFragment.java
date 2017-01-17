@@ -48,6 +48,7 @@ public class PublishActivityFragment extends Fragment implements OnClickListener
 
     private SimpleDateFormat dateFormatter;
     private RadioGroup radioGroup;
+    private EditText titleET;
     private EditText loadDateET;
     private EditText downloadDateET;
     private DatePickerDialog loadDateDialog;
@@ -81,6 +82,10 @@ public class PublishActivityFragment extends Fragment implements OnClickListener
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),R.array.type_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         type.setAdapter(adapter);
+
+
+        //Title
+        titleET = (EditText) view.findViewById(R.id.et_Title);
 
         //Price
         final TextView price = (TextView) view.findViewById(R.id.tv_priceNumber);
@@ -207,7 +212,7 @@ public class PublishActivityFragment extends Fragment implements OnClickListener
         return new LatLngBounds(new LatLng(latitude- 0.01,longitude-0.01), new LatLng(latitude+0.01, longitude+0.01));
     }
 
-    //TODO Crear el objeto Announcement nuevo teniendo cuidado con Location
+
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == PLACE_PICKER_REQUEST_ORIGIN) {
             if (resultCode == RESULT_OK) {

@@ -7,11 +7,16 @@ package model;
 
 import android.content.ContentValues;
 
+
 import java.util.Date;
 
 import erasmus.transportapp.R;
+import model.typeVehicle.Type;
 
 public abstract class Announcement {
+
+    //TODO Crear el objeto Announcement nuevo teniendo cuidado con Location
+
     private Users user;     //Si lo hago FK me interesa String o User?... Mejor User... creo.
     private Date date;      //Fecha en la que ha sido publicado el anuncio para poder mostrarlos en orden cronologico
     private Location destination;
@@ -21,13 +26,11 @@ public abstract class Announcement {
     private Date loadDate;
     private Date downloadDate;
     private String description;
-    private int imageId;
     private int id;
+    private Type type;
 
 
-
-    public Announcement(int id, Users user, Date date, Location destination, Location origin, int price, String title, Date loadDate, Date downloadDate, String description, int imageId) {
-        this.id = id;
+    public Announcement(Users user, Date date, Location destination, Location origin, int price, String title, Date loadDate, Date downloadDate, String description, int id, Type type) {
         this.user = user;
         this.date = date;
         this.destination = destination;
@@ -37,11 +40,12 @@ public abstract class Announcement {
         this.loadDate = loadDate;
         this.downloadDate = downloadDate;
         this.description = description;
-        this.imageId = imageId;
+        this.id = id;
+        this.type = type;
     }
 
     //TODO: Quitar esto en cuanto se pueda :D
-    public Announcement(int id, Location origin, Location destination) {
+    public Announcement(int id, Location origin, Location destination, Type type) {
         this.id = id;
         this.user = new Users("user1");
         this.title = "Título del anuncio :D";
@@ -50,8 +54,8 @@ public abstract class Announcement {
         this.downloadDate = new Date(2017,12,11);
         this.loadDate = new Date(2017,01,11);
         this.description = new String("Blara blara to blara blara");
-        this.imageId = R.drawable.ic_menu_my_announcements;
         this.price = 1200;
+        this.type = type;
 
     }
 
@@ -85,8 +89,10 @@ public abstract class Announcement {
 
     public String getDescription() { return description; }
 
-    public int getImageId() { return imageId; }
 
     public int getId() { return id; }
 
+    public Type getType() {
+        return type;
+    }
 }

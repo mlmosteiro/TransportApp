@@ -35,7 +35,7 @@ public class AnnouncementsAdapter extends ArrayAdapter{
         title.setText(dataArray.get(position).getTitle());
 
         ImageView image = (ImageView) announcement.findViewById(R.id.iv_type);
-        image.setImageResource(dataArray.get(position).getImageId());
+        image.setImageResource(dataArray.get(position).getType().getSrcImage());
 
         TextView origin = (TextView) announcement.findViewById(R.id.tv_origin);
         origin.setText(dataArray.get(position).getOrigin().getName());

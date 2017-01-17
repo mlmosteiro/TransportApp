@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.Spinner;
@@ -49,6 +50,7 @@ public class DetailsActivityFragment extends Fragment {
     private TextView vehicleDetails;
     private TextView vehicleDetailsLabel;
     private TextView description;
+    private ImageView imageType;
 
     private MapView mMapView;
     private GoogleMap googleMap;
@@ -67,6 +69,10 @@ public class DetailsActivityFragment extends Fragment {
         //Price
         priceTV = (TextView) view.findViewById(R.id.tv_priceNumber);
         priceTV.setText(String.format("$%s", Integer.toString(announcement.getPrice())));
+
+        //Image type
+        imageType = (ImageView) view.findViewById(R.id.iv_type);
+        imageType.setImageResource(announcement.getType().getSrcImage());
 
         //Load Date
         dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());

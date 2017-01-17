@@ -3,11 +3,18 @@
     android:layout_width="match_parent" android:layout_height="wrap_content"
     android:minHeight="?attr/listPreferredItemHeight"
     android:orientation="vertical"
-    android:paddingBottom="8dp"
+    android:paddingBottom="0dp"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="8dp"
     android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:id="@+id/tv_title"
+        style="@style/ListItemTitle"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,13 +33,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Title"
-                android:id="@+id/tv_title"
-                style="@style/ListItemTitle"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -116,6 +116,7 @@
     <View
         android:layout_width="fill_parent"
         android:layout_height="2dip"
-        style="@style/Divisor" />
+        style="@style/Divisor"
+        android:layout_marginTop="10dp" />
 
 </LinearLayout>

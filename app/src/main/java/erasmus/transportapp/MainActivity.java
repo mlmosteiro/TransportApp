@@ -29,10 +29,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         setContentView(R.layout.activity_main_announcement);
 
-        myDBHelper = new TransportAppDB( this);
-        myDB=myDBHelper.getWritableDatabase();
-        myDBHelper.testDB(myDB);
-        myDB.close();
+//        myDBHelper = new TransportAppDB( this);
+//        myDB=myDBHelper.getWritableDatabase();
+//        myDBHelper.testDB(myDB);
+//        myDB.close();
 
         if(findViewById(R.id.fragment_container) != null){
             if(savedInstanceState !=null){

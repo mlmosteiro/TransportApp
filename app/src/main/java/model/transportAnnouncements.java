@@ -7,18 +7,21 @@ package model;
 
 import android.content.ContentValues;
 
+
 import java.util.Date;
+
+import model.typeVehicle.Type;
 
 public class TransportAnnouncements extends Announcement {
     private String vhDetails;
 
-    public TransportAnnouncements(int id, Users user, Date date, Location destination, Location origin, int price, String title, Date loadDate, Date downloadDate, String description, int imageId, String vhDetails) {
-        super(id, user, date, destination, origin, price, title, loadDate, downloadDate, description, imageId);
+    public TransportAnnouncements(Users user, Date date, Location destination, Location origin, int price, String title, Date loadDate, Date downloadDate, String description, int id, Type type, String vhDetails) {
+        super(user, date, destination, origin, price, title, loadDate, downloadDate, description, id, type);
         this.vhDetails = vhDetails;
     }
 
-    public TransportAnnouncements(int id, Location origin, Location destination, String vhDetails) {
-        super(id, origin, destination);
+    public TransportAnnouncements(int id, Location origin, Location destination, Type type, String vhDetails) {
+        super(id, origin, destination, type);
         this.vhDetails = vhDetails;
     }
 
@@ -35,7 +38,7 @@ public class TransportAnnouncements extends Announcement {
         values.put(Contracts.transportAnnouncementEntry.origin, this.getOrigin().getName());
         values.put(Contracts.transportAnnouncementEntry.destination, this.getDestination().getName());
         values.put(String.valueOf(Contracts.transportAnnouncementEntry.price), this.getPrice());
-        values.put(String.valueOf(Contracts.transportAnnouncementEntry.imageID), this.getImageId());
+        values.put(String.valueOf(Contracts.transportAnnouncementEntry.type), this.getType().getName());
         return values;
     }
 }

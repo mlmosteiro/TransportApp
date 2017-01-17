@@ -37,12 +37,14 @@ public class PublishActivity extends AppCompatActivity {
         EditText downloadDate = (EditText) findViewById(R.id.et_downloadDate);
         EditText vehicleDetails = (EditText) findViewById(R.id.et_vehicleDetails);
         EditText publicationDetails = (EditText) findViewById(R.id.et_publicationDetails);
+        EditText title = (EditText) findViewById(R.id.et_Title);
 
        try{
            if(loadDate.getText().length()==0) throw new Exception("LoadDate no especificada");
            if(downloadDate.getText().length()==0) throw new Exception("DownloadDate no especificada");
            if(vehicleDetails.getText().length()==0) throw new Exception("VehicleDetails no especificados");
            if(publicationDetails.getText().length()==0) throw new Exception("Detalles de publicacion no especificados");
+           if(title.getText().length()==0) throw new Exception("Titulo no especificado");
 
        } catch (Exception e) {
            e.printStackTrace();
