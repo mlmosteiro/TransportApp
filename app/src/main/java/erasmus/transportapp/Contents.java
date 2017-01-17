@@ -28,10 +28,6 @@ public class Contents {
         return ourInstance;
     }
 
-    public static void setOurInstance(Contents ourInstance) {
-        Contents.ourInstance = ourInstance;
-    }
-
     public ArrayList<Announcement> getAnnouncementsList() {
         return announcementsList;
     }

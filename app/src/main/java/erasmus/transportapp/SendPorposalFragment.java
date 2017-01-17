@@ -14,12 +14,14 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 import model.Announcement;
@@ -27,6 +29,8 @@ import model.Announcement;
 
 public class SendPorposalFragment extends Fragment implements View.OnClickListener {
 
+    private ImageView userImage;
+    private TextView userName;
     private SimpleDateFormat dateFormatter;
     private EditText loadDateET;
     private EditText downloadDateET;
@@ -57,11 +61,16 @@ public class SendPorposalFragment extends Fragment implements View.OnClickListen
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_send_porposal, container, false);
 
+        //User
+        userImage = (ImageView) view.findViewById(R.id.iv_avatarUser);
+        userName = (TextView) view.findViewById(R.id.tv_userName);
+        userName.setText(announcement.getUser().getName());
+
         //Price
         final TextView price = (TextView) view.findViewById(R.id.tv_priceNumber);
         priceBar = (SeekBar) view.findViewById(R.id.sb_price);
-        priceBar.setProgress(1500);
-        price.setText(String.format("$%s", Integer.toString(priceBar.getProgress() + 50)));
+        priceBar.setProgress(announcement.getPrice());
+        price.setText(String.format("$%s", announcement.getPrice()));
         priceBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -82,6 +91,7 @@ public class SendPorposalFragment extends Fragment implements View.OnClickListen
         //Load date
         dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
         loadDateET = (EditText) view.findViewById(R.id.et_loadDate);
+        loadDateET.setText(dateFormatter.format(announcement.getLoadDate()));
         loadDateButton = (ImageButton) view.findViewById(R.id.btn_loadDate);
         loadDateButton.setOnClickListener(this);
         loadDateDialog = setDataPicker(loadDateET);
@@ -89,6 +99,7 @@ public class SendPorposalFragment extends Fragment implements View.OnClickListen
         //Download date
         downloadDateET = (EditText) view.findViewById(R.id.et_downloadDate);
         downloadDateButton = (ImageButton) view.findViewById(R.id.btn_downloadDate);
+        downloadDateET.setText(dateFormatter.format(announcement.getDownloadDate()));
         downloadDateButton.setOnClickListener(this);
         downloadDateDialog = setDataPicker(downloadDateET);
 

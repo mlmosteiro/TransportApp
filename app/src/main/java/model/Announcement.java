@@ -51,6 +51,8 @@ public abstract class Announcement {
         this.loadDate = new Date(2017,01,11);
         this.description = new String("Blara blara to blara blara");
         this.imageId = R.drawable.ic_menu_my_announcements;
+        this.price = 1200;
+
     }
 
     public Users getUser(){
@@ -86,4 +88,5 @@ public abstract class Announcement {
     public int getImageId() { return imageId; }
 
     public int getId() { return id; }
+
 }

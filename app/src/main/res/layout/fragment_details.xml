@@ -131,6 +131,27 @@
             android:layout_height="2dip"
             style="@style/Divisor" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vehicle_details"
+            android:id="@+id/tv_vehicleDetailsLabel"
+            style="@style/Labels" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loreipsum"
+            android:id="@+id/tv_vehicleDetails"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            style="@style/Description"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            style="@style/Divisor" />
 
         <TextView
             android:layout_width="wrap_content"
